@@ -1,7 +1,7 @@
 package JAVA.miniProjects;
 
 /**
- * This calculator only calculates the gross typing speed in words per minute
+ * This calculator only calculates the gross typing speed in words per minute.
  * This program won't consider the wrong words penalty.
  *
  */
