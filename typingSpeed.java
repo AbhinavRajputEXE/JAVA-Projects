@@ -1,7 +1,7 @@
 package JAVA.miniProjects;
 
 /**
- * This calculator only calculates the gross typing speed in word per minute
+ * This calculator only calculates the gross typing speed in words per minute
  * This program won't consider the wrong words penalty.
  *
  */
@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class typingSpeed {
 
-    // This methods add the press enter to continue functionality.
+    // This methods add the "press enter to continue" functionality.
     private static void pressAnyKeyToContinue() {
         System.out.print("Press Enter(only) key to continue...");
         try
@@ -23,7 +23,7 @@ public class typingSpeed {
         }
     }
 
-    //This method gives the basic info to how to use the program to the user
+    //This method gives the basic info to how to use the program to the user.
     public static void infoForUser(){
         System.out.println("---------------------------------------------------------------------------------------------------------------");
         System.out.println("|   • Welcome!!!!!                                                                                            |");
@@ -57,7 +57,7 @@ public class typingSpeed {
         //Calling this method to add the "press enter to continue" functionality.
         pressAnyKeyToContinue();
 
-        //Starting the countdown
+        //Starting the countdown.
         /////////////////////////////////////////
         System.out.println("1");
         Thread.sleep(1000);
@@ -77,7 +77,7 @@ public class typingSpeed {
         String phrase = scan.nextLine();
         long stopTime = System.currentTimeMillis();
 
-        //Calculating the characters entered by the user
+        //Calculating no. of the characters entered by the user.
         int length = phrase.length();
 
         //Running this if condition if rules were not followed and user entered the less characters.
@@ -89,21 +89,21 @@ public class typingSpeed {
             if(yN.equals("y") || yN.equals("Y")){
                 main();
             }
-            //If entered "N", then ending the program
+            //If entered "N", then ending the program.
             else if(yN.equals("n") || yN.equals("N")) {
                 System.out.println("Exiting.......");
                 System.exit(0);
             }
         }
 
-        //If everything went right then calling this method for final result and to print it in this else statement.
+        //If everything went right then calling this method for final result and to print it, in this else statement.
         else {
             finalSpeed(stopTime, startTime, length);
         }
     }
 
     public static void main(String[] args) throws InterruptedException{
-        //calling the main to run the program
+        //calling the main() to run the program.
         main();
     }
 }
